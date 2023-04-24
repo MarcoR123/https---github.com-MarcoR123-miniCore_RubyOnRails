@@ -1,24 +1,10 @@
-# README
+# MiniCore Ruby on Rails project 
+Proyecto desarrollado para la materia de Ingeniería web de la Universidad de las Américas.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Descripción
+El proyecto consiste en resolver un problema simple utilizando un framework MVC. 
+En este caso en particular, el objetivo es realizar un filtrado de información 
+entre dos fechas.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Video
+https://youtu.be/hw2i707zOiA
