@@ -1,0 +1,51 @@
+<h1>Contratos#index</h1>
+
+<table>
+  <tr>
+    <th>Contrato</th>
+    <th>Montos</th>
+    <th>Fecha</th>
+    <th>Cliente</th>
+  </tr>
+  <% @contratos.each do |contrato| %>
+    <tr>
+      <td>
+        <%= contrato.nombre %>
+      </td>
+      <td>
+        <%= contrato.monto %>
+      </td>
+      <td>
+        <%= contrato.fecha %>
+      </td>
+      <td>
+        <%= contrato.cliente.nombre %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<h1>Reporte</h1>
+
+<%= form_with url:contratos_path, method: :get do |form| %>
+  <%= form.date_field :inicio %>
+  <%= form.date_field :fin %>
+  <%= form.submit "Submit" %>
+<% end %>
+
+<table>
+  <tr>
+    <th>Cliente</th>
+    <th>Monto</th>
+  </tr>
+  <% @totales.each do |total| %>
+    <tr>
+      <td>
+        <%= total.cliente_nombre %> 
+      </td>
+      <td>
+        <%= total.monto %> 
+      </td>
+    </tr>
+  <% end %>
+</table>
